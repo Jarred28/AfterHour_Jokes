@@ -1,5 +1,5 @@
 .title {
-  color: #fff;
+  color: gold;
   margin: 0 0 40px;
 }
 
@@ -33,12 +33,12 @@
     font-size: 28px;
 }
 
-.btn-refresh {
+.btn-refresh, .btn-back {
   cursor: pointer;
   padding: 20px 30px;
   background-color: gold;
   border-radius: 10px;
-  color: #fff;
+  color: purple;
   box-shadow: 0 0 0 rgba(10, 10, 10, 0.4);
   transition: all 0.3s ease;
 }
