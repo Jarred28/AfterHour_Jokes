@@ -36,9 +36,9 @@
 .btn-refresh {
   cursor: pointer;
   padding: 20px 30px;
-  background-color: #ef4565;
+  background-color: gold;
   border-radius: 10px;
   color: #fff;
-  box-shadow: 0 0 0 rgba(239, 69, 101, 0.4);
+  box-shadow: 0 0 0 rgba(10, 10, 10, 0.4);
   transition: all 0.3s ease;
 }
