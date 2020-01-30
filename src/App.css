@@ -1,0 +1,44 @@
+.title {
+  color: #fff;
+  margin: 0 0 40px;
+}
+
+.card-wrapper {
+  padding: 50px 10%;
+  width: 75vw;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.card-wrapper ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.joke {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.joke h2 {
+    color: #5f6c7b;
+    text-align: center;
+    margin: 0;
+    font-size: 28px;
+}
+
+.btn-refresh {
+  cursor: pointer;
+  padding: 20px 30px;
+  background-color: #ef4565;
+  border-radius: 10px;
+  color: #fff;
+  box-shadow: 0 0 0 rgba(239, 69, 101, 0.4);
+  transition: all 0.3s ease;
+}
