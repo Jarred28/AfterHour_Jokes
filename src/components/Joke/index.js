@@ -1,7 +1,11 @@
 import React, { memo } from 'react';
 
+// Hou comment: formatted the code for readability
 const Joke = ({ id, type, setup, punchline, isDetail, onSelect }) => (
-  <li className="joke" onClick={() => onSelect && onSelect({ id, type, setup, punchline })}>
+  <li
+    className="joke"
+    onClick={() => onSelect && onSelect({ id, type, setup, punchline })}
+  >
     {isDetail && (
       <>
         <h2>ID: {id}</h2>
@@ -13,4 +17,5 @@ const Joke = ({ id, type, setup, punchline, isDetail, onSelect }) => (
   </li>
 );
 
+// Hou comment: nice job using React.memo to avoid useless rendering!
 export default memo(Joke);
