@@ -4,7 +4,7 @@ import _ from 'lodash';
 import { fetchJokeList } from '../../lib/api';
 import Spinner from '../Spinner';
 import JokeDetail from '../JokeDetail';
-
+// Hou comment: Nice job using hooks to add state to your functional components throughout your application!
 const JokeList = () => {
   const [jokes, setJokes] = useState([]);
   const [loading, toggleLoading] = useState(false);
@@ -13,10 +13,11 @@ const JokeList = () => {
   const fetchJokes = () => {
     toggleLoading(true);
     fetchJokeList().then(resp => {
+      // Hou comment: you can also just use Array.isArray() so there's no need to install the lodash library
       if (_.isArray(resp)) {
         setJokes(resp.slice(0, 5));
       } else {
-        resp.type === 'error' && alert(resp.message);
+        resp.type === 'error' && alert(resp.message); // Hou comment: alert() is a design anti-pattern so try to avoid using it in the future
       }
       toggleLoading(false);
     });
@@ -40,15 +41,15 @@ const JokeList = () => {
                 <Joke onSelect={selectJoke} key={joke.id} {...joke} />
               ))}
             </ul>
-            <div className="btn-refresh" onClick={fetchJokes}>Another 5 jokes</div>
+            <div className="btn-refresh" onClick={fetchJokes}>
+              Another 5 jokes
+            </div>
           </>
         )}
-        {selectedJoke && (
-          <JokeDetail joke={selectedJoke} onBack={backToList} />
-        )}
+        {selectedJoke && <JokeDetail joke={selectedJoke} onBack={backToList} />}
       </Spinner>
     </div>
   );
 };
 
-export default JokeList;  
+export default JokeList;

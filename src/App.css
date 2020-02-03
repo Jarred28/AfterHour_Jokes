@@ -1,3 +1,7 @@
+/* Hou comment: how would avoid using tag selectors to style your app? Can you use class selectors to style your app instead? */
+
+/* Hou comment: consider creating separate stylesheets for your components instead of putting all the CSS in one file, as it will become unscaleable over time */
+
 .title {
   color: gold;
   margin: 0 0 40px;
@@ -14,9 +18,9 @@
 }
 
 .card-wrapper ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 .joke {
@@ -27,13 +31,14 @@
 }
 
 .joke h2 {
-    color: #5f6c7b;
-    text-align: center;
-    margin: 0;
-    font-size: 28px;
+  color: #5f6c7b;
+  text-align: center;
+  margin: 0;
+  font-size: 28px;
 }
 
-.btn-refresh, .btn-back {
+.btn-refresh,
+.btn-back {
   cursor: pointer;
   padding: 20px 30px;
   background-color: gold;
